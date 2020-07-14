@@ -1,0 +1,17 @@
+{
+    "name": "starterpack-mattschnell",
+    "version": "1.0.0",
+    "description": "sa3",
+    "main": "src/index.js",
+    "repository": "https://github.com/dartmouth-cs52-20X/starterpack-mattschnell.git",
+    "author": "mattschnell <54320446+mattschnell@users.noreply.github.com>",
+    "license": "MIT",
+    "scripts": {
+        "start": "node src/index.js"
+    },
+    "devDependencies": {
+        "webpack": "^4.43.0",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.0"
+    }
+}
