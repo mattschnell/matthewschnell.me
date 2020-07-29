@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-undef */
 // import $ from 'jquery';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -22,6 +21,10 @@ const FallBack = (props) => {
   return <div>URL Not Found</div>;
 };
 
+const getBlog = (props) => {
+  return window.location.replace('https://mattchat.org/');
+};
+
 const Nav = (props) => {
   return (
     <nav>
@@ -30,6 +33,7 @@ const Nav = (props) => {
         <li><NavLink to="/about">About</NavLink></li>
         <li><NavLink to="/test/id1">test id1</NavLink></li>
         <li><NavLink to="/test/id2">test id2</NavLink></li>
+        <li><NavLink to="/blog">My Newsletter!</NavLink></li>
       </ul>
     </nav>
   );
@@ -44,6 +48,7 @@ const App = (props) => {
           <Route exact path="/" component={Welcome} />
           <Route path="/about" component={About} />
           <Route exact path="/test/:id" component={Test} />
+          <Route path="/blog" component={getBlog} />
           <Route component={FallBack} />
         </Switch>
 
