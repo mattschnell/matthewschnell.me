@@ -11,7 +11,7 @@
         "test": "eslint src/**.js",
         "build": "yarn clean; NODE_ENV=production webpack --colors",
         "clean": "rimraf dist",
-        "deploy": "yarn build; surge -p dist -d mattschnell-cs52-starter-routing.surge.sh; yarn deploy"
+        "deploy": "yarn build; surge -p dist -d mattschnell-cs52-starter-redux.surge.sh; yarn deploy"
     },
     "devDependencies": {
         "@babel/core": "^7.10.5",
